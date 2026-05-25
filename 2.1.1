@@ -1,0 +1,12 @@
+a, b, c = input().split()
+a = int(a)
+b = int(b)
+c = int(c)
+discriminant = (b ** 2) - 4 * a * c
+root1 = (-b + (discriminant ** 0.5)) / (2 * a)
+root2 = (-b - (discriminant ** 0.5)) / (2 * a)
+if root1 == root2:
+	print(f"root1 = root2 = {root1:.2f}")
+else:
+	print(f"root1 = {root1:.2f}".replace("j", "i"))
+	print(f"root2 = {root2:.2f}".replace("j", "i"))
